@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../layout/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--Community Profit, Open Community, Beyond Community, Transcend Community, Cross Comm..,   -->
+    <title>Transcend Community | Home Page</title>
+</head>
+
+<body>
+    <!-- Navbar Container-->
+    <div class="navWarpper">
+        <nav class="navbar navbar-dark bg-info">
+            <h5>Transcend Community</h5>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item-form" href="index.html">Home.</a>
+                    <a class="dropdown-item-form" href="../layout/form.html">Form.</a>
+                </div>
+            </li>
+        </nav>
+    </div>
+
+    <div class="bg"></div>
+
+    <!-- carousel with some images -->
+
+    <!-- Form Wrapper-->
+    <div class="container">
+        <div class="row">
+            <div class="card mb-3">
+                <img src="images/shopping.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Join the Community</h2>
+                    <p class="card-text">Description on how to fill the form out and what is required.all feilds are
+                        required</p>
+
+                    <div class="col-8 offset-2">
+
+
+                        <form class="clearfix mb-4" action="POST">
+                            <!-- form name -->
+                            <div class="form-group row">
+                                <label for="name-text-input" class="col-2 col-form-label">Name:</label>
+                                <div class="col-10">
+                                    <input class="form-control" type="text" placeholder="Jane Doe" id="name-text-input">
+                                </div>
+                            </div>
+                            <!-- form number -->
+                            <div class="form-group row">
+                                <label for="example-tel-input" class="col-2 col-form-label">Telephone:</label>
+                                <div class="col-10">
+                                    <input class="form-control" type="tel" placeholder="1-(XXX)-XXX-XXXX"
+                                        id="example-tel-input">
+                                </div>
+                            </div>
+                            <!-- form email -->
+                            <div class="form-group row">
+                                <label for="example-email-input" class="col-2 col-form-label">Email:</label>
+                                <div class="col-10">
+                                    <input class="form-control" type="email" placeholder="email@example.com"
+                                        id="example-email-input">
+                                </div>
+                            </div>
+                            <!-- form date -->
+                            <div class="form-group row">
+                                <label for="example-date-input" class="col-2 col-form-label">Date:</label>
+                                <div class="col-10">
+                                    <input class="form-control" type="date" value="" id="example-date-input">
+                                </div>
+                            </div>
+                            <!-- form location -->
+                            <div class="form-group row">
+                                <label for="location-text-input" class="col-2 col-form-label">Location:</label>
+                                <div class="col-10">
+                                    <input class="form-control" type="text" placeholder="Dallas, Tx"
+                                        id="location-text-input">
+                                </div>
+                            </div>
+                            <!-- description of the activites -->
+                            <div class="form-group">
+                                <label for="summary-description">Description:</label>
+                                <textarea class="form-control" id="summary-description"
+                                    aria-describedby="example-description" placeholder=""></textarea>
+                            </div>
+                            <button id="submit" class="btn btn-primary float-right">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Container-->
+    <div class="footer-wrapper">
+        <footer class="page-footer font-small blue pt-4">
+
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-right">
+
+                <!-- Footer row -->
+                <div class="row">
+
+                    <!-- Footer column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+
+                        <!-- Footer Content -->
+                        <p>To help out other communities feel free to donate to orginizations that help those in
+                            need.</p>
+
+                    </div>
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <!-- Footer Links col -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <!--Donation Links -->
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 4</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                <a href=""> Transcend Comminuty</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript for the form imput -->
+    <script src="js/form.js" type="text/javascript"></script>
+
+    <!-- This Bootstrap has to be at the very body before closing body tag-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

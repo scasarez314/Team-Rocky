@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box
+}
+.navWarpper{
+    margin: 2px;
+    height: 10%;
+    background-color:transparent;
+
+}
+.aboutUsWrapper{
+    margin: 5% 20%;
+    
+}
+.containerTwo{
+    background-color: darkgreen;
+    margin: 5px 20%;
+    height: 500px
+}
+.contactWrapper{
+    margin: 5%;
+}
+.footer-wrapper{
+    background-color: lightgrey;
+    
+}
+body{
+    background-color: lightsteelblue
+}
+.containerThree {
+    margin: 2px 10px;
+}
+.card-body-maps,
+.card-body-popups{
+    height: 500px
+}
+.about-us-text{
+    font-size: 15px;
+}
