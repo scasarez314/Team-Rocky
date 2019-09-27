@@ -1,19 +1,27 @@
+// Dependencies
 var db = require("../models");
+var path = require("path")
 
 module.exports = function (app) {
-  // Load index page
+
+  // Load home page on inital / search
   app.get("/", function (req, res) {
-    db.Example.findAll({}).then(function (dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
-    });
+    res.sendFile(path.join(__dirname, "../public/home.html"))
   });
 
-  // Load example page and pass in an example by id
+  // Load home page for the navigation bar
+  app.get("/home", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/home.html"))
+  });
+
+  // Load the form page
+  app.get("/form", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/form.html"))
+  });
+
+  // Leftovers from boiler plate code
   app.get("/example/:id", function (req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function (dbExample) {
+    db.Form.findOne({ where: { id: req.params.id } }).then(function (dbExample) {
       res.render("example", {
         example: dbExample
       });
