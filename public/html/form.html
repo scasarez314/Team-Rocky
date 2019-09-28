@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- CSS Link -->
-    <link rel="stylesheet" href="../views/layout/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!--Community Profit, Open Community, Beyond Community, Transcend Community, Cross Comm..,   -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 
     <title>Transcend Community | Home Page</title>
 </head>
@@ -43,7 +45,7 @@
     <div class="form-container">
         <div class="row">
             <div class="card mb-3">
-                <img src="../views/layout/images/shopping.jpg" class="card-img-top" alt="...">
+                <img src="../images/shopping.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h2 class="card-title text-center">Join the Community</h2>
                     <p class="card-text">Description on how to fill the form out and what is required.all feilds are
@@ -57,7 +59,7 @@
                             <div class="form-group row">
                                 <label for="name-input" class="col-2 col-form-label">Name:</label>
                                 <div class="col-10">
-                                    <input class="form-control" type="text" placeholder="Jane Doe" id="name-input">
+                                    <input class="form-control" type="text" placeholder="Jane Doe" id="formNameInput">
                                 </div>
                             </div>
                             <!-- form number -->
@@ -65,7 +67,7 @@
                                 <label for="telephone-input" class="col-2 col-form-label">Telephone:</label>
                                 <div class="col-10">
                                     <input class="form-control" type="text" placeholder="1-(XXX)-XXX-XXXX"
-                                        id="telephone-input">
+                                        id="formTelephoneInput">
                                 </div>
                             </div>
                             <!-- form email -->
@@ -73,14 +75,14 @@
                                 <label for="email-input" class="col-2 col-form-label">Email:</label>
                                 <div class="col-10">
                                     <input class="form-control" type="text" placeholder="email@example.com"
-                                        id="email-input">
+                                        id="formEmailInput">
                                 </div>
                             </div>
                             <!-- form date -->
                             <div class="form-group row">
                                 <label for="date-input" class="col-2 col-form-label">Date:</label>
                                 <div class="col-10">
-                                    <input class="form-control" type="text" value="" id="date-input">
+                                    <input class="form-control" type="date" value="" id="formDateInput">
                                 </div>
                             </div>
                             <!-- form location -->
@@ -88,16 +90,16 @@
                                 <label for="location-input" class="col-2 col-form-label">Location:</label>
                                 <div class="col-10">
                                     <input class="form-control" type="text" placeholder="Dallas, Tx"
-                                        id="location-input">
+                                        id="locationFormInput">
                                 </div>
                             </div>
                             <!-- description of the activites -->
                             <div class="form-group">
                                 <label for="description-input">Description:</label>
-                                <textarea class="form-control" id="summary-description"
+                                <textarea class="form-control" id="formDescriptionInput"
                                     aria-describedby="description-input" type="text" placeholder=""></textarea>
                             </div>
-                            <button id="submit" class="btn btn-primary float-right">Submit</button>
+                            <button id="formSubmit" class="btn btn-primary float-right">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -159,10 +161,9 @@
     </div>
 
     <!-- JavaScript for the form imput -->
-    <script src="js/form.js" type="text/javascript"></script>
+    <script src="../js/form.js" type="text/javascript"></script>
 
     <!-- This Bootstrap has to be at the very body before closing body tag-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
