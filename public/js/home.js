@@ -1,16 +1,16 @@
-var formFields = [
+// var formFields = [
 
-    $.ajax({
-        method: 'POST',
-        url: '/api/form',
-        data: {
-            name: 'Justin',
-            age: 'unknown'
-        }
-    })
-
-
-];
+//     $.ajax({
+//         method: 'POST',
+//         url: '/api/form',
+//         data: {
+//             name: 'Justin',
+//             age: 'unknown'
+//         }
+//     })
 
 
-module.exports = formFields
+// ];
+
+
+// module.exports = formFields

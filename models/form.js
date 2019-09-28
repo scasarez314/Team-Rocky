@@ -3,7 +3,7 @@ module.exports = function (sequelize, DataTypes) {
 
     name: DataTypes.STRING,
     email: DataTypes.STRING,
-    date: DataTypes.INTEGER,
+    date: DataTypes.DATE,
     zipcode: DataTypes.INTEGER,
     description: DataTypes.STRING
 
