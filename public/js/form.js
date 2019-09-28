@@ -42,19 +42,6 @@ $("#formSubmit").on("click", function(event) {
   }
 });
 
-// This function grabs posts from the database and updates the view
-function getEvents() {
-$.get("/api/events", function(data) {
-posts = data;
-if (!posts || !posts.length) {
-  displayEmpty(author);
-}
-else {
-  initializeRows();
-}
-});
-}
-
 // This function does an API call to delete posts
 //  function deletePost(id) {
 //   $.ajax({
