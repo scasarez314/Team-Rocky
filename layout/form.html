@@ -10,6 +10,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!--Community Profit, Open Community, Beyond Community, Transcend Community, Cross Comm..,   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <title>Transcend Community | Home Page</title>
 </head>
 
@@ -51,47 +53,47 @@
                         <form class="clearfix mb-4" action="POST">
                             <!-- form name -->
                             <div class="form-group row">
-                                <label for="name-text-input" class="col-2 col-form-label">Name:</label>
+                                <label for="name-input" class="col-2 col-form-label">Name:</label>
                                 <div class="col-10">
-                                    <input class="form-control" type="text" placeholder="Jane Doe" id="name-text-input">
+                                    <input class="form-control" type="text" placeholder="Jane Doe" id="name-input">
                                 </div>
                             </div>
                             <!-- form number -->
                             <div class="form-group row">
-                                <label for="example-tel-input" class="col-2 col-form-label">Telephone:</label>
+                                <label for="telephone-input" class="col-2 col-form-label">Telephone:</label>
                                 <div class="col-10">
-                                    <input class="form-control" type="tel" placeholder="1-(XXX)-XXX-XXXX"
-                                        id="example-tel-input">
+                                    <input class="form-control" type="text" placeholder="1-(XXX)-XXX-XXXX"
+                                        id="telephone-input">
                                 </div>
                             </div>
                             <!-- form email -->
                             <div class="form-group row">
-                                <label for="example-email-input" class="col-2 col-form-label">Email:</label>
+                                <label for="email-input" class="col-2 col-form-label">Email:</label>
                                 <div class="col-10">
-                                    <input class="form-control" type="email" placeholder="email@example.com"
-                                        id="example-email-input">
+                                    <input class="form-control" type="text" placeholder="email@example.com"
+                                        id="email-input">
                                 </div>
                             </div>
                             <!-- form date -->
                             <div class="form-group row">
-                                <label for="example-date-input" class="col-2 col-form-label">Date:</label>
+                                <label for="date-input" class="col-2 col-form-label">Date:</label>
                                 <div class="col-10">
-                                    <input class="form-control" type="date" value="" id="example-date-input">
+                                    <input class="form-control" type="text" value="" id="date-input">
                                 </div>
                             </div>
                             <!-- form location -->
                             <div class="form-group row">
-                                <label for="location-text-input" class="col-2 col-form-label">Location:</label>
+                                <label for="location-input" class="col-2 col-form-label">Location:</label>
                                 <div class="col-10">
                                     <input class="form-control" type="text" placeholder="Dallas, Tx"
-                                        id="location-text-input">
+                                        id="location-input">
                                 </div>
                             </div>
                             <!-- description of the activites -->
                             <div class="form-group">
-                                <label for="summary-description">Description:</label>
+                                <label for="description-input">Description:</label>
                                 <textarea class="form-control" id="summary-description"
-                                    aria-describedby="example-description" placeholder=""></textarea>
+                                    aria-describedby="description-input" type="text" placeholder=""></textarea>
                             </div>
                             <button id="submit" class="btn btn-primary float-right">Submit</button>
                         </form>
