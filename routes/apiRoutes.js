@@ -1,23 +1,33 @@
 var db = require("../models");
 
-module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+module.exports = function (app) {
+
+  // Get all fields from Form variable defined in Models -- Form.js
+  app.get("/api/event", function (req, res) {
+    db.Form.findAll({}).then(function (dbForm) {
+      res.json(dbForm);
     });
   });
 
   // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  app.post("/api/events", function (req, res) {
+    console.log(req.body)
+
+    db.Form.create({
+      name: req.body.name,
+      email: req.body.email,
+      date: req.body.date,
+      zipcode: req.body.zipcode,
+      description: req.body.description
+
+    }).then(function (dbForm) {
+      res.json(dbForm);
     });
   });
 
   // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
+  app.delete("/api/examples/:id/", function (req, res) {
+    db.Example.destroy({ where: { id: req.params.id } }).then(function (dbExample) {
       res.json(dbExample);
     });
   });
