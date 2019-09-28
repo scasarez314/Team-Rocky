@@ -1,7 +1,10 @@
 module.exports = function (sequelize, DataTypes) {
-  var Example = sequelize.define("Example", {
-    text: DataTypes.STRING,
+  var Form = sequelize.define("transcend_db", {
+    name: DataTypes.STRING,
+    email: DataTypes.STRING,
+    date: DataTypes.DATE,
+    zipcode: DataTypes.INTEGER,
     description: DataTypes.TEXT
   });
-  return Example;
+  return Form;
 };
