@@ -1,5 +1,5 @@
 {
-  "name": "handlebars-boilerplate",
+  "name": "node-handlebars-boilerplate",
   "version": "1.0.0",
   "description": "Project 2 Starter",
   "main": "server.js",
@@ -31,14 +31,5 @@
     "eslint-plugin-prettier": "^3.1.0",
     "mocha": "^6.1.4",
     "prettier": "^1.17.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/scasarez314/Team-Rocky.git"
-  },
-  "author": "",
-  "bugs": {
-    "url": "https://github.com/scasarez314/Team-Rocky/issues"
-  },
-  "homepage": "https://github.com/scasarez314/Team-Rocky#readme"
+  }
 }
