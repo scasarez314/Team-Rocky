@@ -24,9 +24,9 @@ $(document).ready(function () {
 
         var description = $("#description-input").val();
         localStorage.setItem("Description", description);
-        
-   
-  
+
+
+
         var newEvent = {
             name: name,
             telephone: telephone,
@@ -36,7 +36,7 @@ $(document).ready(function () {
             description: description
         };
 
-      
+
 
         console.log(event);
         // console.log(telephone);
@@ -53,9 +53,9 @@ $(document).ready(function () {
         $("#location-input").val("");
         $("#description-input").val("");
 
-        
+
     });
-   
+
     var name = localStorage.getItem("name");
 
     var telephone = localStorage.getItem("telephone");
@@ -67,24 +67,24 @@ $(document).ready(function () {
     var location = localStorage.getItem("location");
 
     var description = localStorage.getItem("description");
-   
-         $("#event-table > tbody").append(
+
+    $("#event-table > tbody").append(
         $("<tr>").append(
-            $("<td>").v(name),
+            $("<td>").text(name),
             $("<td>").text(telephone),
             $("<td>").text(email),
             $("<td>").text(date),
             $("<td>").text(location),
             $("<td>").text(description)
         )
- );
+    );
 
     console.log(name),
-    console.log(telephone),
-    console.log(email),
-    console.log(date),
-    console.log(location),
-    console.log(description);
+        console.log(telephone),
+        console.log(email),
+        console.log(date),
+        console.log(location),
+        console.log(description);
 
 
 

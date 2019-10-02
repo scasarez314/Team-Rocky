@@ -52,15 +52,15 @@ function getEvents() {
     for (let i = 0; i < data.length; i++) {
       const element = data[i];
       console.log(data[i])
-      // $("#event-table > tbody").append(
-      //   $("<tr>").append(
-      //     $("<td>").v(data[i].name),
-      //     $("<td>").text(data[i].telephone),
-      //     $("<td>").text(data[i].email),
-      //     $("<td>").text(data[i].date),
-      //     $("<td>").text(data[i].location),
-      //     $("<td>").text(data[i].description)
-      //   )
+      $("#event-table > tbody").append(
+        $("<tr>").append(
+          $("<td>").text(data[i].name),
+          $("<td>").text(data[i].telephone),
+          $("<td>").text(data[i].email),
+          $("<td>").text(data[i].date),
+          $("<td>").text(data[i].location),
+          $("<td>").text(data[i].description)
+        ))
 
     }
 
