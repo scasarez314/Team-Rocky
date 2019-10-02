@@ -42,18 +42,6 @@ $("#formSubmit").on("click", function(event) {
   }
 });
 
-<<<<<<< HEAD
-// This function does an API call to delete posts
-//  function deletePost(id) {
-//   $.ajax({
-//     method: "DELETE",
-//     url: "/api/posts/" + id
-//   })
-//     .then(function() {
-//       getPosts(postCategorySelect.val());
-//     });
-// }
-=======
 // This function grabs posts from the database and updates the view
 function getEvents() {
 $.get("/api/events", function(data) {
@@ -67,21 +55,16 @@ else {
 });
 }
 
-// var formFields = [
-
-//     $.ajax({
-//         method: 'POST',
-//         url: '/api/form',
-//         data: {
-//             name: 'Justin',
-//             age: 'unknown'
-//         }
-//     })
-
-
-// ];
-
-
+// This function does an API call to delete posts
+//  function deletePost(id) {
+//   $.ajax({
+//     method: "DELETE",
+//     url: "/api/posts/" + id
+//   })
+//     .then(function() {
+//       getPosts(postCategorySelect.val());
+//     });
+// }
 // module.exports = formFields
 
 // This function grabs posts from the database and updates the view
@@ -131,4 +114,3 @@ var description = currentPost.description
 //create onclick add new event
 //listen for plus bttn
 //change css to display block  
->>>>>>> master
