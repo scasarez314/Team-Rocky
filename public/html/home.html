@@ -61,7 +61,50 @@
             <div class="maps col-lg-6">
                 <div class="card">
                     <div class="card-body-maps">
-                        <p>div for the map</p>
+                        <style>
+                            /* Always set the map height explicitly to define the size of the div
+                             * element that contains the map. */
+                            #map {
+                              height: 100%;
+                            }
+                            /* Optional: Makes the sample page fill the window. */
+                            html, body {
+                              height: 100%;
+                              margin: 0;
+                              padding: 0;
+                            }
+                          </style>
+                        </head>
+                        <body>
+                            <div id="map"></div>
+                            
+                            <!-- <script>
+                        
+                              function initMap() {
+                                var myLatLng = {lat: 32.7767, lng: -96.7970};
+                        
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                  zoom: 4,
+                                  center: myLatLng
+                                });
+                        
+                                var marker = new google.maps.Marker({
+                                  position: myLatLng,
+                                  map: map,
+                                  title: 'Hello World!'
+                                });
+                              }
+                            </script> -->
+
+                          <script src="https://maps.googleapis.com/maps/api/js?key=(***API Key Goes Here***)&callback=initMap"
+                          async defer></script>
+                        <!-- Map DOM Elements required by gmaps -->
+                    </div>
+                </div>
+            </div>
+            <!-- Listings -->
+            <!-- this is for the listings- added ID of homePageListingsDiv -->
+
                     </div>
                 </div>
             </div>
