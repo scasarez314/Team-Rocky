@@ -43,6 +43,7 @@ $("#formSubmit").on("click", function (event) {
   }
 });
 
+<<<<<<< HEAD
 
 //Edit the event
 
@@ -64,6 +65,32 @@ $("#formSubmit").on("click", function (event) {
 //   );
 // });
 
+=======
+// This function grabs posts from the database and updates the view
+function getEvents() {
+$.get("/api/events", function(data) {
+posts = data;
+if (!posts || !posts.length) {
+  displayEmpty(author);
+}
+else {
+  initializeRows();
+}
+});
+}
+
+// This function does an API call to delete posts
+//  function deletePost(id) {
+//   $.ajax({
+//     method: "DELETE",
+//     url: "/api/posts/" + id
+//   })
+//     .then(function() {
+//       getPosts(postCategorySelect.val());
+//     });
+// }
+// module.exports = formFields
+>>>>>>> 6177c9084325be938d7ead7e764db090e531d413
 
 // This function grabs posts from the database and updates the view
 function getEvents() {
@@ -111,4 +138,8 @@ var description = currentPost.description
 //css display none
 //create onclick add new event
 //listen for plus bttn
+<<<<<<< HEAD
 //change css to display block  
+=======
+//change css to display block  
+>>>>>>> 6177c9084325be938d7ead7e764db090e531d413

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 // This function grabs posts from the database and updates the view
 function getEvents() {
@@ -42,3 +43,21 @@ function getEvents() {
     getEvents();
     
 
+=======
+// var formFields = [
+
+//     $.ajax({
+//         method: 'POST',
+//         url: '/api/form',
+//         data: {
+//             name: 'Justin',
+//             age: 'unknown'
+//         }
+//     })
+
+
+// ];
+
+
+// module.exports = formFields
+>>>>>>> 6177c9084325be938d7ead7e764db090e531d413
