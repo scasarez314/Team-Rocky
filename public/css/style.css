@@ -1,12 +1,7 @@
 * {
     box-sizing: border-box
 }
-.navWarpper{
-    margin: 2px;
-    height: 10%;
-    background-color:transparent;
-
-}
+/* Containers */
 .aboutUsWrapper{
     margin: 5% 20%;
     
@@ -16,6 +11,9 @@
     margin: 5px 20%;
     height: 500px
 }
+.containerThree{
+    margin:0px 20%;
+}
 .contactWrapper{
     margin: 5%;
 }
@@ -23,18 +21,107 @@
     background-color: lightgrey;
     
 }
-body{
-    background-color: lightsteelblue
-}
-.containerThree {
-    margin: 2px 10px;
-}
 .card-body-maps,
 .card-body-popups{
     height: 500px
 }
 .about-us-text{
-    font-size: 15px;
+    font-size: 30px;
+}
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+/* Nav */
+html, body {
+    height: 100%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+  }
+  
+a {
+    display: inline-block;
+    list-style: none; 
+    text-decoration: none;
+    color: black;
+    transition: opacity .125s linear;
+}
+ 
+:visited {
+    color: inherit;
+    text-decoration: none;
+}
+.first-container-form {
+    background: url(http://static1.squarespace.com/static/518ea9e4e4b0eb1ecff22776/518ea9e5e4b0eb1ecff2277a/5564ba5de4b02c6efca3576f/1472827702874/?format=1500w) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+} 
+.first-container-home {
+    background: url(https://www.biglakescounty.ca/media/k2/items/cache/82558bd755d4bf64f8b1324b360ed554_XL.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+  
+.nav-container {
+    height: 58px;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    color:lightskyblue;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    transition: background-color 0.2s linear;
+}
+.solid-nav {
+    background-color:black;
+    transition: background-color 0.2s linear;
+}
+    
+.nav-row {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 18px;
+    background-color: white;
+}   
+.nav-logo {
+    display: inline-block;
+    font-weight: 900;
+}
+      
+.nav-controls {
+    float: right;
+} 
+
+a {
+    padding-left: 20px;
 }
 
+  
+.container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 25px;
+    padding-right: 25px;
 
+}
+  
+.row {
+    max-width: 1200px;
+    margin: 0 auto;
+}

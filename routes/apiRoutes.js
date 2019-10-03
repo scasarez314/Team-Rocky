@@ -29,12 +29,6 @@ module.exports = function (app) {
   //GET request for map 
 
 
-
-  // Ajax GET request 
-
-
-
-
   // PUT route for updating Events
   app.put("/api/events/:id", function (req, res) {
     // Add code here to update a post using the values in req.body, where the id is equal to
