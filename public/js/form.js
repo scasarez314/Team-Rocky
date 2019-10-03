@@ -43,40 +43,17 @@ $("#formSubmit").on("click", function (event) {
   }
 });
 
-<<<<<<< HEAD
-
-//Edit the event
-
-
-// This function does an API call to delete posts **need to create this button**
-
-// $(".delete-event").on("click", function(event) {
-//   var id = $(this).data("id");
-
-//   // Send the DELETE request.
-//   $.ajax("/api/events/" + id, {
-//     type: "DELETE"
-//   }).then(
-//     function(data) {
-//       console.log("deleted event", id);
-//       // Reload the page to get the updated list
-//       location.reload();
-//     }
-//   );
-// });
-
-=======
 // This function grabs posts from the database and updates the view
 function getEvents() {
-$.get("/api/events", function(data) {
-posts = data;
-if (!posts || !posts.length) {
-  displayEmpty(author);
-}
-else {
-  initializeRows();
-}
-});
+  $.get("/api/events", function (data) {
+    posts = data;
+    if (!posts || !posts.length) {
+      displayEmpty(author);
+    }
+    else {
+      initializeRows();
+    }
+  });
 }
 
 // This function does an API call to delete posts
@@ -90,56 +67,67 @@ else {
 //     });
 // }
 // module.exports = formFields
->>>>>>> 6177c9084325be938d7ead7e764db090e531d413
 
 // This function grabs posts from the database and updates the view
 function getEvents() {
-  $.get("/api/events", function(data) {
-  posts = data;
-  if (!posts || !posts.length) {
-    displayEmpty(author);
-  }
-  else {
-    initializeRows();
-  }
+  $.get("/api/events", function (data) {
+    posts = data;
+    if (!posts || !posts.length) {
+      displayEmpty(author);
+    }
+    else {
+      initializeRows();
+    }
   });
-  }
-  
-  function initializeRows(){
-      console.log(posts)
+}
+
+function initializeRows() {
+  console.log(posts)
   for (i = 0; i < posts.length; i++) {
-      console.log(posts[i])
-      var currentPost = posts[i];
+    console.log(posts[i])
+    var currentPost = posts[i];
 
 
-var name = currentPost.name
-var telephone = currentPost.telephone
-var email = currentPost.email
-var location = currentPost.location
-var description = currentPost.description
+    var name = currentPost.name
+    var telephone = currentPost.telephone
+    var email = currentPost.email
+    var location = currentPost.location
+    var description = currentPost.description
 
 
-      $("#event-table").append(
-          $("<tr>").append(
-            $("<td>").text(name),
-            $("<td>").text(telephone),
-            $("<td>").text(email),
-            $("<td>").text(location),
-            $("<td>").text(description)
-          )
-        );
-      
-      }
+    $("#event-table").append(
+      $("<tr>").append(
+        $("<td>").text(name),
+        $("<td>").text(telephone),
+        $("<td>").text(email),
+        $("<td>").text(location),
+        $("<td>").text(description)
+      )
+    );
+
   }
+}
 
-  getEvents();
+getEvents();
 
+// Navbar JS
+$(document).ready(function () {
+
+  $(window).scroll(function () {
+
+    var height = $('.first-container').height();
+    var scrollTop = $(window).scrollTop();
+
+    if (scrollTop >= height - 40) {
+      $('.nav-container').addClass('solid-nav');
+    } else {
+      $('.nav-container').removeClass('solid-nav');
+    }
+
+  });
+});
 //add div in html
 //css display none
 //create onclick add new event
 //listen for plus bttn
-<<<<<<< HEAD
 //change css to display block  
-=======
-//change css to display block  
->>>>>>> 6177c9084325be938d7ead7e764db090e531d413

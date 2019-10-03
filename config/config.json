@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "",
+    "password": "D@llZ00123!",
     "database": "transcend_db",
     "host": "localhost",
     "dialect": "mysql"
