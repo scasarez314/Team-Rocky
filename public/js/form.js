@@ -35,12 +35,13 @@ $("#formSubmit").on("click", function (event) {
       data: userFormData
     }).then(function (data) {
       // this will reload our page to get the updated list of events  (Do we need this since our form is on a different page?)
-      location.reload();
+      window.open("/home");
 
     });
   } else {
     alert("Your event could not be created.  Please fill out the form completely.");
   }
+
 });
 
 // This function grabs posts from the database and updates the view
