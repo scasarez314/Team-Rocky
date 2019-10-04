@@ -19,9 +19,10 @@
 </head>
 
 <body>
-                <!-- JavaScript for the form imput -->
-                <script src="../js/form.js" type="text/javascript"></script>
-                <script src="../js/home.js" type="text/javascript"></script>
+    <!-- JavaScript for the form imput -->
+    <script src="../js/form.js" type="text/javascript"></script>
+    <script src="../js/home.js" type="text/javascript"></script>
+    
     <!-- Navbar Container-->
     <div class="navWarpper">
         <nav class="navbar navbar-dark bg-info ">
@@ -80,42 +81,6 @@
                         </head>
                         <body>
                             <div id="map"></div>
-                            
-                            <script>
-//                                 function geocodeAddress(geocoder, resultsMap, address) {
-//     console.log(address);
-//  // var address = document.getElementById("address").value;
-//   geocoder.geocode({ address: address }, function(results, status) {
-//     if (status === "OK") {
-//       resultsMap.setCenter(results[0].geometry.location);
-//       var marker = new google.maps.Marker({
-//         map: resultsMap,
-//         position: results[0].geometry.location
-//       });
-//     } else {
-//       alert("Geocode was not successful for the following reason: " + status);
-//     }
-//   });
-// }
-// function initMap() {
-//   var myLatLng = { lat: 32.7767, lng: -96.797 };
-
-//   var map = new google.maps.Map(document.getElementById("map"), {
-//     zoom: 8,
-//     center: myLatLng
-//   });
-
-//   var geocoder = new google.maps.Geocoder();
-
-//   var marker = new google.maps.Marker({
-//     position: myLatLng,
-//     map: map,
-//     title: "Hello World!"
-//   });
-
-//   geocodeAddress(geocoder, map, "75013");
-// }
-</script>
                           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWLQjwCEl3kJBOhfysZj8X9Wh_0vJ3SF4&callback=initMap"
                           async defer></script>
                         <!-- Map DOM Elements required by gmaps -->
@@ -316,9 +281,6 @@
                 </footer>
             </div>
 
-            <!-- JavaScript for the form imput -->
-            <script src="../js/form.js" type="text/javascript"></script>
-            <script src="../js/home.js" type="text/javascript"></script>
 
             <!-- This Bootstrap has to be at the very bottom before closing body tag-->
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
