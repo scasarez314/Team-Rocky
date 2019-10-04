@@ -12,19 +12,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <script src="https://use.fontawesome.com/b495e25ba7.js"></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /><script
-        src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 
-
-    
     <title>Transcend Community | Home Page</title>
 </head>
 
 <body>
+    <!-- JavaScript for the form imput -->
+    <script src="../js/form.js" type="text/javascript"></script>
+    <script src="../js/home.js" type="text/javascript"></script>
+    
     <!-- Navbar Container-->
     <div class="first-container-home">
         <div class="nav-container">
@@ -70,18 +70,43 @@
             <div class="maps col-lg-6">
                 <div class="card">
                     <div class="card-body-maps">
-                        <p>div for the map</p>
+                        <style>
+                            /* Always set the map height explicitly to define the size of the div
+                             * element that contains the map. */
+                            #map {
+                              height: 100%;
+                            }
+                            /* Optional: Makes the sample page fill the window. */
+                            html, body {
+                              height: 100%;
+                              margin: 0;
+                              padding: 0;
+                            }
+                          </style>
+                        </head>
+                        <body>
+                            <div id="map"></div>
+                          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWLQjwCEl3kJBOhfysZj8X9Wh_0vJ3SF4&callback=initMap"
+                          async defer></script>
+                        <!-- Map DOM Elements required by gmaps -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Listings -->
+            <!-- this is for the listings- added ID of homePageListingsDiv -->
+
                     </div>
                 </div>
             </div>
 
             <!-- Listings -->
             <div class="listOfPopups col-lg-6">
-                
-                    <div class="body-popups">
-                        <div class="row">
 
-                            <div class="col-lg-12">
+                <div class="body-popups">
+                    <div class="row">
+
+                        <div class="col-lg-12">
 
 
                                 <div class="panel panel-primary">
@@ -112,12 +137,7 @@
                                     </div>
                                 </div>
                             </div>
-                        
-
-                    
-
                 </div>
-
             </div>
         </div>
     </div>

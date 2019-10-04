@@ -5,7 +5,7 @@ module.exports = function (sequelize, DataTypes) {
     telephone: DataTypes.STRING,
     email: DataTypes.STRING,
     date: DataTypes.DATE,
-    Location: DataTypes.STRING,
+    location: DataTypes.STRING,
     description: DataTypes.STRING
 
 

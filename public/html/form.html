@@ -8,99 +8,106 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- jQuery -->
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- Semantics UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
 
-    <title>Transcend Community | Home Page</title>
+
+    <title>Transcend Community | Form Page</title>
 </head>
 
 <body>
     <!-- Navbar Container-->
-    <div class="navWarpper">
-        <nav class="navbar navbar-dark bg-info">
-            <h5>Transcend Community</h5>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item-form" href="/home">Home.</a>
-                    <a class="dropdown-item-form" href="/form">Form.</a>
+    <div class="first-container-form">
+        <div class="nav-container">
+            <div class="nav-row">
+                <div class="nav-logo">
+                    <a href="#">
+                        Transcend Community
+                    </a>
                 </div>
-            </li>
-        </nav>
-    </div>
+                <div class="nav-controls">
+                    <a href="/home"><i class="home icon"></i>Home</a>
+                    <a href=/form> <i class="file outline icon"></i>Form</a>
 
-    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- carousel with some images -->
 
     <!-- Form Wrapper-->
-    <div class="form-container">
+    <div class=" ui container">
         <div class="row">
             <div class="card mb-3">
-                <img src="../images/shopping.jpg" class="card-img-top" alt="...">
+
                 <div class="card-body">
                     <h2 class="card-title text-center">Join the Community</h2>
-                    <p class="card-text">Description on how to fill the form out and what is required.all feilds are
-                        required</p>
+                    <hr>
+                    <p class="card-text text-center">Thank you for taking an intrest in joining your
+                        community; To
+                        submit your event
+                        all fields are required. </p>
+                    <hr>
+                    <hr>
+                    <div class="ui container">
+                        <div class="col-8 offset-2">
 
-                    <div class="col-8 offset-2">
 
-
-                        <form id="formsubmission" class="clearfix mb-4">
-                            <!-- form name -->
-                            <div class="form-group row">
-                                <label for="name-input" class="col-2 col-form-label">Name:</label>
-                                <div class="col-10">
-                                    <input class="form-control" type="text" placeholder="Jane Doe" id="formNameInput">
+                            <form id="formsubmission" class="clearfix mb-4">
+                                <!-- form name -->
+                                <div class="form-group row">
+                                    <label for="name-input" class="col-2 col-form-label">Name:</label>
+                                    <div class="col-10">
+                                        <input class="form-control" type="text" placeholder="Jane Doe"
+                                            id="formNameInput">
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- form number -->
-                            <div class="form-group row">
-                                <label for="telephone-input" class="col-2 col-form-label">Telephone:</label>
-                                <div class="col-10">
-                                    <input class="form-control" type="text" placeholder="1-(XXX)-XXX-XXXX"
-                                        id="formTelephoneInput">
+                                <!-- form number -->
+                                <div class="form-group row">
+                                    <label for="telephone-input" class="col-2 col-form-label">Telephone:</label>
+                                    <div class="col-10">
+                                        <input class="form-control" type="text" placeholder="1-(XXX)-XXX-XXXX"
+                                            id="formTelephoneInput">
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- form email -->
-                            <div class="form-group row">
-                                <label for="email-input" class="col-2 col-form-label">Email:</label>
-                                <div class="col-10">
-                                    <input class="form-control" type="text" placeholder="email@example.com"
-                                        id="formEmailInput">
+                                <!-- form email -->
+                                <div class="form-group row">
+                                    <label for="email-input" class="col-2 col-form-label">Email:</label>
+                                    <div class="col-10">
+                                        <input class="form-control" type="text" placeholder="email@example.com"
+                                            id="formEmailInput">
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- form date -->
-                            <div class="form-group row">
-                                <label for="date-input" class="col-2 col-form-label">Date:</label>
-                                <div class="col-10">
-                                    <input class="form-control" type="date" value="" id="formDateInput">
+                                <!-- form date -->
+                                <div class="form-group row">
+                                    <label for="date-input" class="col-2 col-form-label">Date:</label>
+                                    <div class="col-10">
+                                        <input class="form-control" type="date" value="" id="formDateInput">
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- form location -->
-                            <div class="form-group row">
-                                <label for="location-input" class="col-2 col-form-label">Location:</label>
-                                <div class="col-10">
-                                    <input class="form-control" type="text" placeholder="Dallas, Tx"
-                                        id="locationFormInput">
+                                <!-- form location -->
+                                <div class="form-group row">
+                                    <label for="location-input" class="col-2 col-form-label">Location:</label>
+                                    <div class="col-10">
+                                        <input class="form-control" type="text" placeholder="Dallas, Tx"
+                                            id="locationFormInput">
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- description of the activites -->
-                            <div class="form-group">
-                                <label for="description-input">Description:</label>
-                                <textarea class="form-control" id="formDescriptionInput"
-                                    aria-describedby="description-input" type="text" placeholder=""></textarea>
-                            </div>
-                            <button id="formSubmit" class="btn btn-primary float-right">Submit</button>
-                        </form>
+                                <!-- description of the activites -->
+                                <div class="form-group">
+                                    <label for="description-input">Description:</label>
+                                    <textarea class="form-control" id="formDescriptionInput"
+                                        aria-describedby="description-input" type="text" placeholder=""></textarea>
+                                </div>
+                                <button id="formSubmit" class="btn btn-info float-right"><i
+                                        class="paper plane outline icon"></i>Submit</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,33 +120,43 @@
         <footer class="page-footer font-small blue pt-4">
 
             <!-- Footer Links -->
-            <div class="container-fluid text-center text-md-right">
+            <div class="container text-center" id="footer-links" style="padding: 0;">
 
                 <!-- Footer row -->
                 <div class="row">
 
                     <!-- Footer column -->
-                    <div class="col-md-6 mt-md-0 mt-3">
+                    <div class="col-6">
 
                         <!-- Footer Content -->
-                        <p>To help out other communities feel free to donate to orginizations that help those in
-                            need.</p>
+                        <p>To help out other communities feel free to donate to orginizations that help
+                            those in
+                            need.
+                            <br>
+
+                            <!-- <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary
+                                link</a> -->
+                            <div class="uber-container text-md-left">
+                                <a href="https://www.uber.com/" class="btn btn-secondary btn-lg active" role="button"
+                                    aria-pressed="true"><i class="uber icon"></i>Uber</a>
+                            </div>
+                        </p>
 
                     </div>
                     <hr class="clearfix w-100 d-md-none pb-3">
 
                     <!-- Footer Links col -->
-                    <div class="col-md-3 mb-md-0 mb-3">
+                    <div class="col-lg-6">
 
                         <!--Donation Links -->
                         <h5 class="text-uppercase">Links</h5>
 
                         <ul class="list-unstyled">
                             <li>
-                                <a href="#!">Link 1</a>
+                                <a href="https://www.foodpantries.org/ci/tx-dallas">Food Pantries</a>
                             </li>
                             <li>
-                                <a href="#!">Link 2</a>
+                                <a href="https://bontonfarms.org/">Bonton Farms</a>
                             </li>
                             <li>
                                 <a href="#!">Link 3</a>
@@ -162,10 +179,15 @@
 
     <!-- JavaScript for the form imput -->
     <script src="../js/form.js" type="text/javascript"></script>
-
     <!-- This Bootstrap has to be at the very body before closing body tag-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script
+ src="https://code.jquery.com/jquery-3.4.1.js"
+ integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+ crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
