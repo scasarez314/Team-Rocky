@@ -94,6 +94,7 @@ function initializeRows() {
     var email = currentPost.email
     var location = currentPost.location
     var description = currentPost.description
+    var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + name + "</td><td>" + email + "</td></tr>"
 
 
     $("#event-table").append(
@@ -105,9 +106,11 @@ function initializeRows() {
         $("<td>").text(description)
       )
     );
+    
 
   }
 }
+
 
 getEvents();
 
