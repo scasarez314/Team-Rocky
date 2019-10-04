@@ -7,37 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- CSS Link -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Semantics UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="https://use.fontawesome.com/b495e25ba7.js"></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Potental names -->
-    <!--Community Profit, Open Community, Beyond Community, Transcend Community, Cross Comm..,   -->
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /><script
+        src="https://code.jquery.com/jquery-3.4.1.js">
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script>
+
+
+
+
+    </script>
     <title>Transcend Community | Home Page</title>
 </head>
 
 <body>
     <!-- Navbar Container-->
-    <div class="navWarpper">
-        <nav class="navbar navbar-dark bg-info ">
-
-            <h5 class="text-white">Transcend Community</h5>
-            <li class="nav-item dropdown text-white">
-                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item-form" href="/home">Home.</a>
-                    <a class="dropdown-item-form" href="/form">Form.</a>
+    <div class="first-container-home">
+        <div class="nav-container">
+            <div class="nav-row">
+                <div class="nav-logo">
+                    <a href="#">
+                        Transcend Community
+                    </a>
+                </div>
+                <div class="nav-controls">
+                    <a href="/home"><i class="home icon"></i>Home</a>
+                    <a href=/form> <i class="file outline icon"></i>Form</a>
 
                 </div>
-            </li>
-        </nav>
+            </div>
+        </div>
     </div>
-
 
 
     <!-- carousel with some images -->
@@ -47,7 +51,12 @@
         <div class="card bg-dark text-white">
             <img src="../images/farmer.jpg" class="card-img" alt="...">
             <div class="card-img-overlay">
-                <h5 class="card-title text-center" id="about-us-text">About Us and Our Mission</h5>
+                <h5 class="ui dividing huge header card-title text-center text-white" id="about-us-text"
+                    style="font-size: 65px;">
+                    About Us
+                    and Our
+                    Mission
+                </h5>
                 <p class="card-text">Desctiption.</p>
 
             </div>
@@ -65,10 +74,11 @@
                     </div>
                 </div>
             </div>
+
             <!-- Listings -->
             <div class="listOfPopups col-lg-6">
-                <div class="card">
-                    <div class="card-body-popups">
+                
+                    <div class="body-popups">
                         <div class="row">
 
                             <div class="col-lg-12">
@@ -77,190 +87,204 @@
                                 <div class="panel panel-primary">
                                     <div class="panel-heading">
                                         <h3 class="panel-title"><strong>Current Events</h3>
+                                            <span style="font-size: 48px; color: Dodgerblue;">
+                                            
                                     </div>
                                     <div class="panel-body">
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
+                                                    <th>Edit</th>
                                                     <th>Name</th>
                                                     <th>Telephone</th>
                                                     <th>Email</th>
                                                     <th>Location</th>
                                                     <th>Description</th>
+                                                    <th>Delete</th>
                                                 </tr>
                                             </thead>
                                             <tbody id="event-table">
+                                                
                                             </tbody>
                                         </table>
+                                        <button type="button" class="Edit-row">Edit</button>
+                                        <button type="button" class="delete-row">Delete</button>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        
 
-                    </div>
+                    
 
                 </div>
 
             </div>
+        </div>
+    </div>
 
-            <!-- Contact Us Info Container-->
-            <div class="contactWrapper">
-                <div class="card">
-                    <div class="card-body">
-                        <section class="mb-4">
 
-                            <!--Contact heading-->
-                            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-                            <!--Contact description-->
-                            <p class="text-center w-responsive mx-auto mb-5"> blah blah blah</p>
+    <!-- Contact Us Info Container-->
+    <div class="contactWrapper">
+        <div class="card">
+            <div class="card-body">
 
+
+                <!--Contact heading-->
+                <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+                <!--Contact description-->
+
+                <div class="row">
+
+                    <!--Contact Us Form-->
+                    <div class="col-md-9 mb-md-0 mb-12">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                            <!--Contact Us first row-->
                             <div class="row">
 
-                                <!--Contact Us Form-->
-                                <div class="col-md-9 mb-md-0 mb-12">
-                                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                                        <!--Contact Us first row-->
-                                        <div class="row">
-
-                                            <!--Contact Us Name -->
-                                            <div class="col-md-6">
-                                                <div class="md-form mb-0">
-                                                    <input type="text" id="name" name="name" class="form-control">
-                                                    <label for="name" class="">Your name</label>
-                                                </div>
-                                            </div>
-                                            <!--Contact Us Email -->
-                                            <div class="col-md-6">
-                                                <div class="md-form mb-0">
-                                                    <input type="text" id="email" name="email" class="form-control">
-                                                    <label for="email" class="">Your email</label>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-
-
-                                        <!--Contact Us second row-->
-                                        <!-- Contact Us Subject -->
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="md-form mb-0">
-                                                    <input type="text" id="subject" name="subject" class="form-control">
-                                                    <label for="subject" class="">Subject</label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!--Contact Us third row-->
-                                        <!--Contact Us Message-->
-                                        <div class="row">
-                                            <div class="col-md-12">
-
-                                                <div class="md-form">
-                                                    <textarea type="text" id="message" name="message" rows="2"
-                                                        class="form-control md-textarea"></textarea>
-                                                    <label for="message">Your message</label>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </form>
-
-                                    <!-- Contact Us Button -->
-                                    <div class="text-center text-md-right text-white">
-                                        <a class="btn btn-primary">Send</a>
+                                <!--Contact Us Name -->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Your name</label>
+                                    </div>
+                                </div>
+                                <!--Contact Us Email -->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Your email</label>
                                     </div>
                                 </div>
 
-                                <!--Trancend Community Info && Logo-->
-                                <div class="col-md-3 text-center">
-                                    <img src="../images/logo.jpg" class="caontact-img" alt="...">
-                                    <br>
-                                    <ul class="list-unstyled mb-0">
-                                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                                            <p>Dallas, TX 75222, USA</p>
-                                        </li>
 
-                                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                                            <p>+ 01 234 567 89</p>
-                                        </li>
+                            </div>
 
-                                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                                            <p>TranscendCommunity@gmail.com</p>
-                                        </li>
-                                    </ul>
+
+                            <!--Contact Us second row-->
+                            <!-- Contact Us Subject -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
                                 </div>
                             </div>
-                        </section>
+
+                            <!--Contact Us third row-->
+                            <!--Contact Us Message-->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2"
+                                            class="form-control md-textarea"></textarea>
+                                        <label for="message">Your message</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Contact Us Button -->
+                        <div class="text-center text-md-right text-white">
+                            <a class="btn btn-info"><i class="send icon"></i>Send</a>
+                        </div>
+                    </div>
+
+                    <!--Trancend Community Info && Logo-->
+
+                    <div class="col-md-3 text-center text-md-left">
+                        <img src="../images/logo.jpg" class="caontact-img" alt="...">
+                        <br>
+                        <ul class="list-unstyled mb-0">
+                            <li><i class=" map marker alternate icon"></i>: Dallas, TX 75222, USA
+                            </li>
+
+                            <li><i class="phone icon"></i>: + 01 234 567 89
+                            </li>
+
+                            <li><i class="mail icon"></i>: TranscendCommunity@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer Container-->
+    <div class="footer-wrapper">
+        <footer class="page-footer font-small blue pt-4">
+
+            <!-- Footer Links -->
+            <div class="container text-center" id="footer-links" style="padding: 0;">
+
+                <!-- Footer row -->
+                <div class="row">
+
+                    <!-- Footer column -->
+                    <div class="col-6">
+
+                        <!-- Footer Content -->
+                        <p>To help out other communities feel free to donate to orginizations that help
+                            those in
+                            need.
+                            <br>
+
+                            <!-- <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary
+                                        link</a> -->
+                            <div class="uber-container text-md-left">
+                                <a href="https://www.uber.com/" class="btn btn-secondary btn-lg active" role="button"
+                                    aria-pressed="true"><i class="uber icon"></i>Uber</a>
+                            </div>
+                        </p>
+
+                    </div>
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <!-- Footer Links col -->
+                    <div class="col-lg-6">
+
+                        <!--Donation Links -->
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://www.foodpantries.org/ci/tx-dallas">Food Pantries</a>
+                            </li>
+                            <li>
+                                <a href="https://bontonfarms.org/">Bonton Farms</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 4</a>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
 
-            <!-- Footer Container-->
-            <div class="footer-wrapper">
-                <footer class="page-footer font-small blue pt-4">
-
-                    <!-- Footer Links -->
-                    <div class="container-fluid text-center text-md-right">
-
-                        <!-- Footer row -->
-                        <div class="row">
-
-                            <!-- Footer column -->
-                            <div class="col-md-6 mt-md-0 mt-3">
-
-                                <!-- Footer Content -->
-                                <p>To help out other communities feel free to donate to orginizations that help those in
-                                    need.</p>
-
-                                <!-- button for uber -->
-
-                                <!-- button for the form -->
-
-                            </div>
-                            <hr class="clearfix w-100 d-md-none pb-3">
-
-                            <!-- Footer Links col -->
-                            <div class="col-md-3 mb-md-0 mb-3">
-
-                                <!--Donation Links -->
-                                <h5 class="text-uppercase">Links</h5>
-
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#!">Link 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!">Link 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!">Link 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!">Link 4</a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Copyright -->
-                    <div class="footer-copyright text-center py-3">© 2019 Copyright:
-                        <a href=""> Transcend Comminuty</a>
-                    </div>
-                </footer>
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                <a href=""> Transcend Comminuty</a>
             </div>
+        </footer>
+    </div>
 
-            <!-- JavaScript for the form imput -->
-            <script src="../js/form.js" type="text/javascript"></script>
-            <script src="../js/home.js" type="text/javascript"></script>
+    <!-- JavaScript for the form imput -->
+    <script src="../js/form.js" type="text/javascript"></script>
 
-            <!-- This Bootstrap has to be at the very bottom before closing body tag-->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- This Bootstrap has to be at the very bottom before closing body tag-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
