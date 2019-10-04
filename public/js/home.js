@@ -1,22 +1,27 @@
-// ajax get request to get zip code
-// loop through database
+// variable declarations
+var geocoder;
+var marker;
 
-// goecoding service to get lat and long
-var lat = '';
-var lng = '';
-var address = {zipcode} or {city and state};
-geocoder.geocode( { 'address': address}, function(results, status) {
-  if (status == google.maps.GeocoderStatus.OK) {
-     lat = results[0].geometry.location.lat();
-     lng = results[0].geometry.location.lng();
-    });
-  } else {
-    alert("Geocode was not successful for the following reason: " + status);
-  }
-});
-alert('Latitude: ' + lat + ' Logitude: ' + lng);
+// geocoding service to get lat and long
+// https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/javascript/examples/geocoding-simple
 
-// push the markers to the map
+function geocodeAddress(geocoder, resultsMap, address) {
+  console.log(address);
+  // var address = document.getElementById("address").value;
+  geocoder.geocode({ address: address }, function(results, status) {
+    if (status === "OK") {
+      resultsMap.setCenter(results[0].geometry.location);
+      marker = new google.maps.Marker({
+        map: resultsMap,
+        position: results[0].geometry.location
+      });
+    } else {
+      alert("Geocode was not successful for the following reason: " + status);
+    }
+  });
+}
+
+// initialize googlemap and center it over dallas
 function initMap() {
   var myLatLng = { lat: 32.7767, lng: -96.797 };
 
@@ -25,9 +30,35 @@ function initMap() {
     center: myLatLng
   });
 
+  geocoder = new google.maps.Geocoder();
+
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
     title: "Hello World!"
   });
+
+  geocodeAddress(geocoder, map, "77001");
 }
+
+// ajax GET request to pull location and name wrapped in a function
+function pullLocationDataFromMYSQL() {
+  console.log(posts);
+  for (i = 0; i < posts.length; i++) {
+    var currentPost = posts[i];
+    var name = currentPost.name;
+    var telephone = currentPost.telephone;
+    var email = currentPost.email;
+    var location = currentPost.location;
+    var description = currentPost.description;
+  }
+}
+
+function postEventstoMap() {
+  $.get("/api/events", function(data) {
+    console.log(data);
+    pullLocationDataFromMYSQL();
+  });
+}
+
+postEventstoMap();
